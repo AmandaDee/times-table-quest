@@ -395,10 +395,12 @@ h1 em,
   font-size: 0.62rem;
 }
 
-.answers button:hover:not(:disabled) {
-  color: #080b12;
-  background: var(--accent);
-  transform: translateY(-3px);
+@media (hover: hover) and (pointer: fine) {
+  .answers button:hover:not(:disabled) {
+    color: var(--text);
+    border-color: var(--accent-light);
+    transform: translateY(-3px);
+  }
 }
 
 .answers button:disabled {
